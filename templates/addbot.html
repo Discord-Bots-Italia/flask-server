@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Discord Bots Italia</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn.discordapp.com/icons/611322575674671107/a_97c421382d72ed131956e0deb51aa1f7.gif?size=1024"/>
+    <meta property = "og:title" content = "Discord Bots Italia">
+    <meta property = "og:description" content = "Modulo per aggiungere il tuo Bot al server">
+    <meta property = "og:image" content = "https://cdn.discordapp.com/icons/611322575674671107/a_97c421382d72ed131956e0deb51aa1f7.gif?size=1024">
+    <meta name="theme-color" content="#706fd3">
+
+    <style>
+
+      body {
+        font-family: 'Roboto Mono', monospace;
+        background: #706fd3;
+        text-align: center;
+      }
+      
+      h1 {
+        color: #273c75;
+      }
+
+      .nolink {
+        text-decoration: none;
+      }
+
+      .link {
+        color: #182C61;
+      }
+  
+        .container {
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+
+    </style>
+    
+</head>
+<body>
+  <h1>Aggiungi Il Tuo Bot!</h1>
+  <div class = "questions">
+    <p>Nome Del Bot</p>
+    <input type = "text" placeholder = "Emoji Locker" id = "nomebot">
+    <p>ID Del Bot</p>
+    <input type = "text" placeholder = "564064204387123210">
+    <p>Versione Del Bot</p>
+    <input type = "text" placeholder = "v3.4">
+    <p>Invito Personalizzato</p>
+    <input type = "text" placeholder = "https://discordapp.com/api/oauth2/authorize?client_id=635044836830871562&permissions=8&scope=bot">
+    <p>Libreria Del Bot</p>
+    <input type = "text" placeholder = "discord.py">
+
+    <h1 id = "h1"></h1>
+
+    <button onclick = "submit()" name = "send-bot"></button>
+
+    <script>
+      function addbot() {
+        var text = document.getElementById("nomebot").innerText;
+        document.getElementById("h1").innerHTML = text;
+      }
+    </script>
+  </div>
+</body>
