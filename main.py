@@ -5,7 +5,7 @@ import os
 import json
 import asyncio
 
-bot = commands.AutoShardedBot(command_prefix = "<")
+bot = commands.Bot(command_prefix = "<")
 bot.load_extension("jishaku")
 
 @bot.event
