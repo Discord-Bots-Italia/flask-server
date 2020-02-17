@@ -10,7 +10,7 @@ bot.load_extension("jishaku")
 
 @bot.event
 async def on_ready():
-  print(f"Discord bot online as {bot.user}")
+  print(f"Discord bot online as {bot.user} ({bot.user.id})")
   update_count.start()
   update_bots.start()
   
